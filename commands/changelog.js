@@ -18,8 +18,9 @@ module.exports = {
       { name: 'v0.1.1 | 06/27/2022', value: 'Connected to a database, created manual setup.'},
       { name: 'v1 | 06/28/2022', value: 'Added auto-setup command and list of TI\'s.'},
       { name: 'v1.1 | 06/29/2022', value: 'Added the message command.'},
+      { name: 'v1.2 | 08/15/2022', value: 'Fixed a bug where the bot crashes when using \`/message\`.'}
     )
-    .setFooter({ text: "- Tom27#3897 -"})
+    .setFooter({ text: "- Tom27#3897, Whee23#0587 -"})
     .setTimestamp();
 
     return changelogEmbed;
