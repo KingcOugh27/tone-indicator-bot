@@ -42,17 +42,17 @@ module.exports = {
       timestamp: newTimestamp,
       control: true
     }
-    
-    await new cooldownSchema(uploadCooldown).save();
 
     const messageEmbed = new MessageEmbed()
     .setTitle("You've got mail!")
-    .setDescription(`Sent from ${interaciton.channel.id}\n-----${args[0]}`)
+    .setDescription(`**Sent from ${interaction.channel.id}**\n-----\n${args[0]}`)
     .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/High-contrast-mail-mark-unread.svg/480px-High-contrast-mail-mark-unread.svg.png")
     .setColor("RANDOM")
     .setFooter({ text: `From: ${userID}` })
     .setTimestamp();
     client.guilds.cache.get('930338844354678805').channels.cache.get('991704001525588028').send({ embeds: [messageEmbed] });
+
+    await new cooldownSchema(uploadCooldown).save();
 
     console.log(`${userID} has sent a message!`);
     
