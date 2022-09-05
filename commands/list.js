@@ -22,6 +22,7 @@ module.exports = {
       { name: '/rh or /rt, /t, /i', value: 'Rhetorical question, Teasing, Inside Joke'},
       { name: '/m, /li, /f', value: 'Metaphorically, Literally, Fake'}
     )
+    .setFooter({ text: `Tom27#3897, Whee23#0587 | v1.3` })
     .setTimestamp();
 
     return listEmbed;
