@@ -21,7 +21,7 @@ module.exports = {
       { name: 'v1.2 | 08/15/2022', value: 'Fixed a bug where the bot crashes when using \`/message\`.'},
       { name: 'v1.3 | 09/02/2022', value: 'More consistent uptime. Notifies me for crashes.'}
     )
-    .setFooter({ text: "- Tom27#3897, Whee23#0587 -"})
+    .setFooter({ text: "- #######, Whee23#0587 -"})
     .setTimestamp();
 
     return changelogEmbed;
